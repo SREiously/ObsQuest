@@ -1,3 +1,3 @@
-module gomon
+module obsquest
 
 go 1.24.4
