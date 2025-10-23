@@ -24,7 +24,7 @@ In short: **Make reliability fun again.**
 ---
 
 ## 🧩 Current Architecture
-
+```
 Go Web App
 ├── main.go # HTTP server and template rendering
 ├── templates/
@@ -36,7 +36,7 @@ Go Web App
 │ ├── reliability_man.png
 │ └── mr_5xx.png
 └── canned.json # Example service data
-
+```
 ---
 
 ## 🧠 TODO / Roadmap
@@ -79,13 +79,13 @@ ObsQuest currently loads its data from `canned.json`, which contains pre-baked m
 
 ```json
 [
-{
- "name": "shoppingcartapi",
- "availability": 99.999,
- "errors": 1,
- "type": "Hero",
- "trend": 0.233
-}
+  {
+    "name": "shoppingcartapi",
+    "availability": 99.999,
+    "errors": 1,
+    "type": "Hero",
+    "trend": 0.233
+  }
 ]
 ```
 
