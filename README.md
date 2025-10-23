@@ -1,5 +1,7 @@
 # 🦸‍♂️ ObsQuest
 
+[![ObsQuest Screenshot](obsquest_screenshot.png)](obsquest_screenshot.png)
+
 **ObsQuest** is a lightweight Go-based dashboard designed to bring a bit of fun and visibility to site reliability engineering. It lets teams display service availability and reliability stats in a “Heroes vs Villains” style leaderboard — rewarding top-performing services and calling out the troublemakers (with love, of course).
 
 ---
