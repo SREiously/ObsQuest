@@ -1,0 +1,142 @@
+[
+    {
+        "name": "shoppingcartapi",
+        "availability": 99.999,
+        "errors": 1,
+        "type": "Hero",
+        "trend": 0.233
+    },
+    {
+        "name": "pricecheckapi",
+        "availability": 99.921,
+        "errors": 123,
+        "type": "Hero",
+        "trend": -0.122
+    },
+    {
+        "name": "shoppingcartapi-us",
+        "availability": 99.911,
+        "errors": 1222,
+        "type": "Hero",
+        "trend": 0.055
+    },
+    {
+        "name": "shoppingcartapi-br",
+        "availability": 99.821,
+        "errors": 12,
+        "type": "Hero",
+        "trend": -0.199
+    },
+    {
+        "name": "shoppingcartapi-fr",
+        "availability": 99.799,
+        "errors": 99292,
+        "type": "Hero",
+        "trend": 0.045
+    },
+    {
+        "name": "shoppingcartapi-gr",
+        "availability": 99.933,
+        "errors": 1,
+        "type": "Hero",
+        "trend": 0.098
+    },
+    {
+        "name": "pricecheckapi-us",
+        "availability": 99.923,
+        "errors": 1,
+        "type": "Hero",
+        "trend": 0.120
+    },
+    {
+        "name": "pricecheckapi-fr",
+        "availability": 99.955,
+        "errors": 1,
+        "type": "Hero",
+        "trend": 0.145
+    },
+    {
+        "name": "pricecheckapi-br",
+        "availability": 99.849,
+        "errors": 1,
+        "type": "Hero",
+        "trend": -0.033
+    },
+    {
+        "name": "pricecheckapi-gr",
+        "availability": 99.339,
+        "errors": 1,
+        "type": "Hero",
+        "trend": 0.002
+    },
+    {
+        "name": "advertiseapi",
+        "availability": 50.119,
+        "errors": 423,
+        "type": "Villain",
+        "trend": -0.122
+    },
+    {
+        "name": "advertiseapi-us",
+        "availability": 44.229,
+        "errors": 10002,
+        "type": "Villain",
+        "trend": -0.231
+    },
+    {
+        "name": "advertiseapi-in",
+        "availability": 11.459,
+        "errors": 12223322,
+        "type": "Villain",
+        "trend": 0.031
+    },
+    {
+        "name": "advertiseapi-gr",
+        "availability": 2.339,
+        "errors": 1123123,
+        "type": "Villain",
+        "trend": -0.012
+    },
+    {
+        "name": "advertiseapi-br",
+        "availability": 65.496,
+        "errors": 432432,
+        "type": "Villain",
+        "trend": 0.075
+    },
+    {
+        "name": "advertiseapi-de",
+        "availability": 77.345,
+        "errors": 132123,
+        "type": "Villain",
+        "trend": -0.065
+    },
+    {
+        "name": "couponapi",
+        "availability": 87.254,
+        "errors": 11111,
+        "type": "Villain",
+        "trend": 0.211
+    },
+    {
+        "name": "couponapi-us",
+        "availability": 12.176,
+        "errors": 12,
+        "type": "Villain",
+        "trend": -0.031
+    },
+    {
+        "name": "couponapi-br",
+        "availability": 32.913,
+        "errors": 1322,
+        "type": "Villain",
+        "trend": 0.033
+    },
+    {
+        "name": "couponapi-fr",
+        "availability": 34.922,
+        "errors": 112321344,
+        "type": "Villain",
+        "trend": -0.044
+    }
+]

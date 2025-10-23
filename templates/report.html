@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ObsQuest Monthly Report</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>ObsQuest Monthly Report</h1>
+        <p>HTTP Availability Leaderboard: Villains & Heroes</p>
+    </header>
+    <div class="container">
+
+        <div class="section villain">
+            <div class="image-container">
+                <img src="/static/images/mr_5xx.png" alt="Villain">
+            </div>
+            <h2>Bottom 10 Supervillains</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>App Name</th>
+                        <th>Availability</th>
+                        <th>Errors</th>
+                        <th>Trend</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{range .Villains}}
+                    <tr>
+                        <td>{{.Name}}</td>
+                        <td>{{printf "%.3f%%" .Availability}}</td>
+                        <td>{{.Errors}}</td>
+                        <td class="{{if lt .Trend 0.0}}trend-down{{else}}trend-up{{end}}">
+                            {{if lt .Trend 0.0}}▼{{else}}▲{{end}} {{printf "%.3f%%" .Trend}}
+                        </td>
+                    </tr>
+                    {{end}}
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section hero">
+            <div class="image-container">
+                <img src="/static/images/reliability_man.png" alt="Hero">
+            </div>
+            <h2>Top 10 Superheroes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>App Name</th>
+                        <th>Availability</th>
+                        <th>Errors</th>
+                        <th>Trend</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{range .Heroes}}
+                    <tr>
+                        <td>{{.Name}}</td>
+                        <td>{{printf "%.3f%%" .Availability}}</td>
+                        <td>{{.Errors}}</td>
+                        <td class="{{if lt .Trend 0.0}}trend-down{{else}}trend-up{{end}}">
+                            {{if lt .Trend 0.0}}▼{{else}}▲{{end}} {{printf "%.3f%%" .Trend}}
+                        </td>
+                    </tr>
+                    {{end}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #1a1a2e;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 15px 20px;
+    /* smaller padding */
+    background: linear-gradient(135deg, #162447, #1f4068);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* slightly smaller shadow */
+}
+
+header h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.4em;
+    /* smaller title */
+    margin: 0;
+    color: #ffd369;
+    text-shadow: 1px 1px 2px #000;
+    /* smaller shadow */
+}
+
+header p {
+    margin: 4px 0 0;
+    /* less space below title */
+    font-size: 0.9em;
+    /* smaller subtitle */
+    color: #a0a0a0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #162447;
+    border: 2px solid #0f3460;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    flex: 1 1 450px;
+    max-width: 500px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Image container ensures uniform height without squishing images */
+.image-container {
+    height: 300px;
+    /* large enough for desktop */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.hero img,
+.villain img {
+    max-height: 100%;
+    width: auto;
+    border-radius: 20px;
+}
+
+.section h2 {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.2em;
+    color: #ffd369;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px #000;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #0f3460;
+}
+
+th {
+    color: #ffd369;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+td {
+    font-size: 1em;
+}
+
+/* default colors for non-trend cells */
+.hero td:not(.trend-up):not(.trend-down) {
+    color: #32cd32;
+}
+
+.villain td:not(.trend-up):not(.trend-down) {
+    color: #ff4c4c;
+}
+
+/* trend colors */
+.trend-up {
+    color: #32cd32 !important;
+    font-weight: bold;
+}
+
+.trend-down {
+    color: #ff4c4c !important;
+    font-weight: bold;
+}
+
+/* responsive adjustments */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        height: 220px;
+        /* smaller but still visible on mobile */
+    }
+
+    .hero img,
+    .villain img {
+        width: auto;
+        max-height: 100%;
+    }
+}
